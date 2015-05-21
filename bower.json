@@ -1,0 +1,19 @@
+{
+  "name": "SKN",
+  "version": "0.0.0",
+  "authors": [
+    "Krzysztof <krzysztof_mikuta@interia.pl>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.3.15"
+  }
+}
