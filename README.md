@@ -1,5 +1,3 @@
-# SKN-Page
-
 # Install bower dependencies (Angular, Bootstrap)
 bower install
 
