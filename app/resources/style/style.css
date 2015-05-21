@@ -1,19 +1,35 @@
+.body {
+    padding: 0;
+    margin: 0;
+}
+
+.fullscreen{
+    height: 100vh;
+    min-width: 100%;
+    display: table;
+}
+
 page-home {
+    background: blue;
     color: red;
 }
 
 page-about {
+    background: yellow;
     color: green
 }
 
 page-projects {
+    background: red;
     color:blue;
 }
 
 page-gallery {
+    background: green;
     color: orange;
 }
 
 page-contact {
+    background: orange;
     color:blueviolet
 }
