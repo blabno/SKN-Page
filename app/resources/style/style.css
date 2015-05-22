@@ -9,14 +9,44 @@
     display: table;
 }
 
+.nav-horizontal {
+    background-color: rgba(0,0,0,0.7);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-right: 15px;
+    text-align: right;
+}
+
+.nav-horizontal a {
+    color: #fff;
+}
+
+.nav > li > a:hover {
+    color: #AAA;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.nav > li > a:focus {
+    color: #AAA;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.nav-pills {
+    display: inline-block;
+}
+
+
 page-home {
-    background: blue;
-    color: red;
+    background: darkblue;
+    background-size:cover;
 }
 
 page-about {
-    background: yellow;
-    color: green
+    background: blueviolet;
+    background-size:cover;
 }
 
 page-projects {

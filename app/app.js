@@ -8,7 +8,7 @@
             restrict: 'E',
             templateUrl: 'resources/templates/home.html',
             controller: function() {
-                this.message = 'This is a Home Content';
+
             },
             controllerAs: 'homeCtrl'
         };
@@ -19,7 +19,7 @@
             restrict: 'E',
             templateUrl: 'resources/templates/about.html',
             controller: function() {
-                this.message = 'This is an About Content';
+
             },
             controllerAs: 'aboutCtrl'
         };
@@ -30,7 +30,7 @@
             restrict: 'E',
             templateUrl: 'resources/templates/projects.html',
             controller: function() {
-                this.message = 'This is a Projects Content';
+
             },
             controllerAs: 'projectsCtrl'
         };
@@ -41,7 +41,7 @@
             restrict: 'E',
             templateUrl: 'resources/templates/gallery.html',
             controller: function() {
-                this.message = 'This is a Gallery Content';
+
             },
             controllerAs: 'galleryCtrl'
         };
@@ -52,7 +52,7 @@
             restrict: 'E',
             templateUrl: 'resources/templates/contact.html',
             controller: function() {
-                this.message = 'This is a Contact Content';
+
             },
             controllerAs: 'contactCtrl'
         };

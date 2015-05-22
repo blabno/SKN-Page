@@ -35,18 +35,30 @@
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 <script type="text/javascript" src="resources/js/page-scripts.js"></script>
 
-<!-- SPA Content -->
-<div class="container-fluid">
-    <page-home class="fullscreen"></page-home>
-
-    <page-about class="fullscreen"></page-about>
-
-    <page-projects class="fullscreen"></page-projects>
-
-    <page-gallery class="fullscreen"></page-gallery>
-
-    <page-contact class="fullscreen"></page-contact>
+<div ng-controller="ScrollController as scrollCtrl">
+    <nav class="nav-horizontal navbar-fixed-top">
+        <ul class="nav nav-pills">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 </div>
 
+<!-- SPA Content -->
+<page-home class="fullscreen"></page-home>
+
+<page-about class="fullscreen"></page-about>
+
+<page-projects class="fullscreen"></page-projects>
+
+<page-gallery class="fullscreen"></page-gallery>
+
+<page-contact class="fullscreen"></page-contact>
+
+
 </body>
+
 </html>
