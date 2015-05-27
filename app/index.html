@@ -38,35 +38,50 @@
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 
 <div ng-controller="ScrollController as scroll">
-    <nav class="nav-horizontal navbar-fixed-top">
-        <ul class="nav nav-pills">
-            <li><a href="" ng-click="scroll.goTo('home')">Home</a></li>
-            <li><a href="" ng-click="scroll.goTo('about')">About</a></li>
-            <li><a href="" ng-click="scroll.goTo('projects')">Projects</a></li>
-            <li><a href="" ng-click="scroll.goTo('gallery')">Gallery</a></li>
-            <li><a href="" ng-click="scroll.goTo('contact')">Contact</a></li>
-        </ul>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="" ng-click="scroll.goTo('home')">SKN Robotyki</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="" ng-click="scroll.goTo('home')">Home</a></li>
+                    <li><a href="" ng-click="scroll.goTo('about')">About</a></li>
+                    <li><a href="" ng-click="scroll.goTo('projects')">Projects</a></li>
+                    <li><a href="" ng-click="scroll.goTo('gallery')">Gallery</a></li>
+                    <li><a href="" ng-click="scroll.goTo('contact')">Contact</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
     </nav>
 </div>
 
 <div id="home" class="fullscreen" >
-
+    <h1 class="text-center vctr">Home Module</h1>
 </div>
 
-<div id="about" class="fullscreen" >
-
+<div id="about" class="fullscreen" ng-controller="HomeController as home">
+    <h1 class="text-center vctr">{{ home.message }}</h1>
 </div>
 
-<div id="projects" class="fullscreen">
-
+<div id="projects" class="fullscreen" ng-controller="AboutController as about">
+    <h1 class="text-center vctr">{{ about.message }}</h1>
 </div>
 
-<div id="gallery" class="fullscreen">
-
+<div id="gallery" class="fullscreen" ng-controller="GalleryController as gallery">
+    <h1 class="text-center vctr">{{ gallery.message }}</h1>
 </div>
 
-<div id="contact" class="fullscreen">
-
+<div id="contact" class="fullscreen" ng-controller="ContactController as contact">
+    <h1 class="text-center vctr">{{ contact.message }}</h1>
 </div>
 
 </body>

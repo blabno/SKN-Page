@@ -13,23 +13,23 @@
     }]);
 
     app.controller('HomeController', function() {
-
+        this.message = 'Home Module';
     });
 
     app.controller('AboutController', function() {
-
+        this.message = 'About Module';
     });
 
     app.controller('ProjectsController', function() {
-
+        this.message = 'Projects Module';
     });
 
     app.controller('GalleryController', function() {
-
+        this.message = 'Gallery Module';
     });
 
     app.controller('ContactController', function() {
-
+        this.message = 'Contact Module';
     });
 
 })();

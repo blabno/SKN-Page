@@ -3,6 +3,15 @@
     margin: 0;
 }
 
+/* Override bootrstrap sources */
+.navbar-inverse {
+    background-color: #111;
+}
+.navbar-right {
+    margin-right: 10px;
+}
+/* End bootstrap sources */
+
 .fullscreen{
     height: 100vh;
     min-width: 100%;
@@ -10,48 +19,27 @@
     padding-top: 70px;
 }
 
-.nav-horizontal {
-    background-color: rgba(0,0,0,0.7);
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-top: 5px;
-    padding-right: 15px;
-    text-align: right;
-}
-
-.nav-horizontal a {
-    color: #fff;
-}
-
-.nav > li > a:hover {
-    color: #AAA;
-    background-color: transparent;
-    text-transform: uppercase;
-}
-
-.nav > li > a:focus {
-    color: #AAA;
-    background-color: transparent;
-    text-transform: uppercase;
-}
-
-.nav-pills {
-    display: inline-block;
+.vctr {
+    display: table-cell;
+    vertical-align: middle;
 }
 
 #home {
     background: darkblue;
     background-size:cover;
+    color: #CCC;
 }
 
 #about {
     background: blueviolet;
     background-size:cover;
+    color: #ff0000;
 }
 
 #projects {
     background: red;
     background-size:cover;
+    color: #E9DC51;
 }
 
 #gallery {
