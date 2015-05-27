@@ -31,6 +31,7 @@
     background: darkblue;
     background-size:cover;
     color: #FFF;
+
 }
 #home h1 {
     font-size: 60px;
@@ -73,6 +74,9 @@
 }
 
 #contact {
-    background: orange;
-    color:blueviolet
+    background: #fff;
+    color:#222;
+}
+#contact h3 {
+    margin:15px;
 }
