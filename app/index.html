@@ -62,39 +62,40 @@
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
     </nav>
-</div>
 
-<div id="home" class="fullscreen" ng-controller="HomeController as home">
-    <div class="container text-center vctr">
-        <div class="col-md-offset-3 col-md-6
-                    col-sm-offset-2 col-sm-8
-                    col-xs-12">
-            <h1><span style="color:#ff0000">Z pasji </span>do robotyki</h1>
-            <h4>
-                Studenckie Koło Naukowe Robotyki zrzesza zdolnych i ambitnych studentów Instytutu Politechnicznego,
-                chcących rozwijać swoje umiejętności w zakresie realizacji projektów w dziedzinie Automatyki i Robotyki.
-            </h4>
-            <a href="" ng-click="scroll.goTo('about')">Więcej o nas</a>
+    <div id="home" class="fullscreen" ng-controller="HomeController as home">
+        <div class="container text-center vctr">
+            <div class="col-md-offset-3 col-md-6
+                        col-sm-offset-2 col-sm-8
+                        col-xs-12">
+                <h1><span style="color:#ff0000">Z pasji </span>do robotyki</h1>
+                <h4>
+                    Studenckie Koło Naukowe Robotyki zrzesza zdolnych i ambitnych studentów Instytutu Politechnicznego,
+                    chcących rozwijać swoje umiejętności w zakresie Automatyki i Robotyki.
+                </h4>
+
+                <a href="" ng-click="scroll.goTo('about')" class="btn btn-info">Więcej o nas</a>
+            </div>
         </div>
+
     </div>
 
-</div>
+    <div id="about" class="fullscreen" ng-controller="HomeController as home">
+        <h1 class="text-center">Passion for Robotics</h1>
 
-<div id="about" class="fullscreen" ng-controller="HomeController as home">
-    <h1 class="text-center">Passion for Robotics</h1>
+    </div>
 
-</div>
+    <div id="projects" class="fullscreen" ng-controller="AboutController as about">
+        <h1 class="text-center vctr">{{ about.message }}</h1>
+    </div>
 
-<div id="projects" class="fullscreen" ng-controller="AboutController as about">
-    <h1 class="text-center vctr">{{ about.message }}</h1>
-</div>
+    <div id="gallery" class="fullscreen" ng-controller="GalleryController as gallery">
+        <h1 class="text-center vctr">{{ gallery.message }}</h1>
+    </div>
 
-<div id="gallery" class="fullscreen" ng-controller="GalleryController as gallery">
-    <h1 class="text-center vctr">{{ gallery.message }}</h1>
-</div>
-
-<div id="contact" class="fullscreen" ng-controller="ContactController as contact">
-    <h1 class="text-center vctr">{{ contact.message }}</h1>
+    <div id="contact" class="fullscreen" ng-controller="ContactController as contact">
+        <h1 class="text-center vctr">{{ contact.message }}</h1>
+    </div>
 </div>
 
 </body>
