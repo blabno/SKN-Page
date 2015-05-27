@@ -1,61 +1,35 @@
-(function() {
+(function () {
     'use strict';
+    var app = angular.module('SknPageApp', ['ngRoute', 'smoothScroll']);
 
-    var app = angular.module('SknPageApp', []);
-
-    app.directive('pageHome', function() {
-        return {
-            restrict: 'E',
-            templateUrl: 'resources/templates/home.html',
-            controller: function() {
-
-            },
-            controllerAs: 'homeCtrl'
+    app.controller('ScrollController', ['smoothScroll', function(smoothScroll) {
+        this.goTo = function(id) {
+            var element = document.getElementById(id);
+            var options = {
+                duration: 1800
+            };
+            smoothScroll(element, options);
         };
+    }]);
+
+    app.controller('HomeController', function() {
+
     });
 
-    app.directive('pageAbout', function() {
-        return {
-            restrict: 'E',
-            templateUrl: 'resources/templates/about.html',
-            controller: function() {
+    app.controller('AboutController', function() {
 
-            },
-            controllerAs: 'aboutCtrl'
-        };
     });
 
-    app.directive('pageProjects', function() {
-        return {
-            restrict: 'E',
-            templateUrl: 'resources/templates/projects.html',
-            controller: function() {
+    app.controller('ProjectsController', function() {
 
-            },
-            controllerAs: 'projectsCtrl'
-        };
     });
 
-    app.directive('pageGallery', function() {
-        return {
-            restrict: 'E',
-            templateUrl: 'resources/templates/gallery.html',
-            controller: function() {
+    app.controller('GalleryController', function() {
 
-            },
-            controllerAs: 'galleryCtrl'
-        };
     });
 
-    app.directive('pageContact', function() {
-        return {
-            restrict: 'E',
-            templateUrl: 'resources/templates/contact.html',
-            controller: function() {
+    app.controller('ContactController', function() {
 
-            },
-            controllerAs: 'contactCtrl'
-        };
     });
 
 })();

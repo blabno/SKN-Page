@@ -8,6 +8,7 @@
     <meta name="author" content="Krzysztof Mikuta, Sebastian Dybowski">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/">
 
     <!-- Bootstrap -->
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -26,6 +27,8 @@
 <body>
 <!-- Angular -->
 <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+<script type="text/javascript" src="bower_components/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="bower_components/ngSmoothScroll/angular-smooth-scroll.min.js"></script>
 <script type="text/javascript" src="app.js"></script>
 
 <!-- Bootstrap -->
@@ -33,31 +36,38 @@
 
 <!-- JQuery -->
 <script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
-<script type="text/javascript" src="resources/js/page-scripts.js"></script>
 
-<div ng-controller="ScrollController as scrollCtrl">
+<div ng-controller="ScrollController as scroll">
     <nav class="nav-horizontal navbar-fixed-top">
         <ul class="nav nav-pills">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Gallery</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="" ng-click="scroll.goTo('home')">Home</a></li>
+            <li><a href="" ng-click="scroll.goTo('about')">About</a></li>
+            <li><a href="" ng-click="scroll.goTo('projects')">Projects</a></li>
+            <li><a href="" ng-click="scroll.goTo('gallery')">Gallery</a></li>
+            <li><a href="" ng-click="scroll.goTo('contact')">Contact</a></li>
         </ul>
     </nav>
 </div>
 
-<!-- SPA Content -->
-<page-home class="fullscreen"></page-home>
+<div id="home" class="fullscreen" >
 
-<page-about class="fullscreen"></page-about>
+</div>
 
-<page-projects class="fullscreen"></page-projects>
+<div id="about" class="fullscreen" >
 
-<page-gallery class="fullscreen"></page-gallery>
+</div>
 
-<page-contact class="fullscreen"></page-contact>
+<div id="projects" class="fullscreen">
 
+</div>
+
+<div id="gallery" class="fullscreen">
+
+</div>
+
+<div id="contact" class="fullscreen">
+
+</div>
 
 </body>
 
